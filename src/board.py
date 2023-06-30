@@ -6,7 +6,6 @@ from piece import *
 class Board:
     def __init__(self):
         self.squares = [[0,0,0,0,0,0,0,0] for col in range(COLS)]
-        #what
         self._create()
         self._add_pieces('white')
         self._add_pieces('black')
