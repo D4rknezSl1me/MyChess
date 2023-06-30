@@ -62,7 +62,7 @@ class Main:
 
 
 
-            pygame.display.update
+            pygame.display.update()
 
 main = Main()
 main.mainloop()
