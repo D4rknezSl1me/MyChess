@@ -19,7 +19,6 @@ class Game:
                 rect = (col*SQSIZE, row*SQSIZE, SQSIZE, SQSIZE)
 
                 pygame.draw.rect(surface, color, rect)
-                pygame.display.flip()
 
     def show_pieces(self, surface):
         for row in range(ROWS):
@@ -36,4 +35,3 @@ class Game:
                         piece.texture_rect = img.get_rect(center=img_center)
 
                         surface.blit(img, piece.texture_rect)
-                        pygame.display.flip()

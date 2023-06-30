@@ -5,15 +5,13 @@ from piece import *
 # Console Board
 class Board:
     def __init__(self):
-        self.squares = []
+        self.squares = [[0,0,0,0,0,0,0,0] for col in range(COLS)]
         
         self._create()
         self._add_pieces('white')
         self._add_pieces('black')
     
     def _create(self):
-        self.squares = [[0,0,0,0,0,0,0,0] for col in range(COLS)]
-
         for row in range(ROWS):
             for col in range(COLS):
                 self.squares[row][col] = Square(row, col)
